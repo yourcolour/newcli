@@ -1,0 +1,159 @@
+{
+  "sublimeTextKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.detectIndentation": false,
+  "emmet.triggerExpansionOnTab": true,
+  // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
+  "editor.rulers": [80, 120],
+  "psi-header.variables": [["projectCreationYear", "2018"], ["year", "2999"]],
+  "psi-header.config": {
+    "forceToTop": true,
+    "blankLinesAfter": 1,
+    "author": "lazy",
+    "authorEmail": "yang.xiong@meicloud.com",
+    "company": "MeiCloud",
+    "git": "lazy"
+  },
+  "psi-header.templates": [
+    {
+      "language": "JavaScript",
+      "template": [
+        "File: <<filename>>",
+        "Project: <<projectname>>",
+        "File Created: <<filecreated('YYYY-MM-DD h:mm:ss a')>>",
+        "Author: <<author>> (<<authoremail>>)",
+        "-----",
+        "Last Modified: <<dateformat('YYYY-MM-DD h:mm:ss a')>>",
+        "Modified By: <<author>> (<<authoremail>>>) (<<git>>)",
+        "-----",
+        "Copyright © <<projectCreationYear>> - <<copyrightholder>>, <<company>>"
+      ]
+    },
+    {
+      "language": "*",
+      "template": [
+        "File: <<filename>>",
+        "Project: <<projectname>>",
+        "File Created: <<filecreated('YYYY-MM-DD h:mm:ss a')>>",
+        "Author: <<author>> (<<authoremail>>)",
+        "-.-.-",
+        "Last Modified: <<dateformat('YYYY-MM-DD h:mm:ss a')>>",
+        "Modified By: <<author>> (<<authoremail>>>) (<<git>>)",
+        "-.-.-",
+        "Copyright © <<projectCreationYear>> - <<copyrightholder>>, <<company>>"
+      ]
+    }
+  ],
+  "psi-header.lang-config": [
+    {
+      "language": "vue",
+      "begin": "<!--",
+      "prefix": " .. ",
+      "end": "-->"
+    }
+  ],
+  "psi-header.changes-tracking": {
+    "isActive": true,
+    "autoHeader": true,
+    "replace": true
+  },
+  "window.zoomLevel": 1,
+  "path-intellisense.mappings": {
+    "/": "${workspaceRoot}",
+    "lib": "${workspaceRoot}/lib",
+    "components": "${workspaceRoot}/src/components",
+    "global": "/Users/dummy/globalLibs",
+    "@": "${workspaceRoot}/src",
+    "src": "${workspaceRoot}/src"
+  },
+  "svn.path": "C:/Program Files/TortoiseSVN/bin",
+  // 控制是否在搜索中跟踪符号链接。
+  "search.followSymlinks": false,
+  "sync.gist": "24d5249d53333f59786664f92b6c61df",
+  "sync.lastUpload": "2018-04-30T11:55:39.221Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "2018-05-14T01:51:45.125Z",
+  "sync.forceDownload": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  // Turns auto fix on save on or off.
+  "eslint.autoFixOnSave": true,
+  // An array of language ids which should be validated by ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "html",
+    "vue"
+  ],
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "javascript.preferences.quoteStyle": "single",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "files.trimFinalNewlines": false
+  },
+  "terminal.integrated.rendererType": "dom",
+  "javascript.validate.enable": true,
+  "editor.foldingStrategy": "indentation",
+  "workbench.iconTheme": "material-icon-theme",
+  "minapp-vscode.formatMaxLineCharacters": 120,
+  "typescript.preferences.quoteStyle": "single",
+  "html.format.indentInnerHtml": true,
+  "dart.lineLength": 120,
+  "html.format.indentHandlebars": true,
+
+  // 配置在 vue 文件中的 js 的格式化，必须配置
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true,
+      "jsxSingleQuote": true,
+      "printWidth": 120,
+      "eslintIntegration": true,
+      "tabWidth": 2,
+      "trailingComma": "es5"
+    }
+  },
+
+  // 默认格式化配置
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 配置 js 文件的 prettier格式化设置，也是必须配置的
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  // 这个很奇怪，如果设置为 true 的话，上一条就会失效
+  "prettier.eslintIntegration": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+}
